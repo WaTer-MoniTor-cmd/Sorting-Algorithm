@@ -9,7 +9,7 @@ Created on Thu Nov 28 11:47:25 2024
 with open("Sorting-Algorithm/Thai address data/province.txt", "r", encoding="utf-8") as file:
     lines = file.readlines()  # อ่านไฟล์ทีละบรรทัดแล้วเก็บในลิสต์
 
-# เปิดไฟล์ mm_deta.txt สำหรับเขียนข้อมูล
+# เปิดไฟล์ province_deta.txt สำหรับเขียนข้อมูล
 with open("province_deta.txt", "w", encoding="utf-8") as output_file:
     # วนลูปผ่านแต่ละบรรทัด
     for line in lines:
