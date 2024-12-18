@@ -5,7 +5,7 @@ Created on Thu Nov 28 11:47:25 2024
 @author: chana
 """
 
-# เปิดไฟล์ mm.txt
+# เปิดไฟล์ .txt
 with open("Sorting-Algorithm/Thai address data/province.txt", "r", encoding="utf-8") as file:
     lines = file.readlines()  # อ่านไฟล์ทีละบรรทัดแล้วเก็บในลิสต์
 
@@ -42,7 +42,7 @@ with open("province_deta.txt", "w", encoding="utf-8") as output_file:
             # สร้างสตริงผลลัพธ์ตามที่ต้องการ
             output = f"{pcode} {pname} {type_soilder}\n"
 
-            # เขียนข้อมูลลงไฟล์ mm_deta.txt
+            # เขียนข้อมูลลงไฟล์ _deta.txt
             output_file.write(output)
 
-print("เขียนข้อมูลสำเร็จ!")
+print("OK!")

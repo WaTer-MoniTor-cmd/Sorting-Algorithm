@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Thu Dec 12 14:06:26 2024
 
@@ -6,10 +6,11 @@ Created on Thu Dec 12 14:06:26 2024
 """
 import time
 
+#จับเวลา
 start_time = time.time()
 
 with open("Sorting-Algorithm/province_deta.txt", "r", encoding="utf-8") as file:
-    lines = file.readlines()
+    lines = file.readlines() # อ่านไฟล์ทีละบรรทัดแล้วเก็บในลิสต์
     
 def BubbleSort(a_list):
     n = len(a_list)
@@ -26,10 +27,12 @@ def BubbleSort(a_list):
     return a_list
 
 sorted_lines = BubbleSort(lines)
+
+#คำนวณเวลา
 end_time = time.time()
 elapsed_time = end_time - start_time
 
 for line in sorted_lines:
-    print(line.strip())  # ลบ \n ออกเมื่อแสดงผล
+    print(line.strip()) 
 
-print(f"เวลาที่ใช้: {elapsed_time} วินาที")
+print(f"เวลาที่ใช้: {elapsed_time:.6f} วินาที")

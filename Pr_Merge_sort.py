@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Thu Dec 12 14:32:36 2024
 
@@ -6,6 +6,7 @@ Created on Thu Dec 12 14:32:36 2024
 """
 import time
 
+#จับเวลา
 start_time = time.time()
 
 with open("Sorting-Algorithm/province_deta.txt", "r", encoding="utf-8") as file:
@@ -52,11 +53,13 @@ def MergeSort(a_list):
 a = MergeSort(lines)
 
 sorted_lines = MergeSort(lines)
+
+#คำนวณเวลา
 end_time = time.time()
 elapsed_time = end_time - start_time
 
 for line in a:
     print(line.strip())
 
-print(f"เวลาที่ใช้: {elapsed_time} วินาที")
+print(f"เวลาที่ใช้: {elapsed_time:.6f} วินาที")
 
