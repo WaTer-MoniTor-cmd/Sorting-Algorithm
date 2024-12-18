@@ -31,7 +31,7 @@ with open("province_deta.txt", "w", encoding="utf-8") as output_file:
             #mtype = values[3]
             pcode = values[0]
             pname = values[1]
-            type_soilder = values[2]
+            #type_soilder = values[2]
             #acode = values[6]
             #aname = values[7]
             #tcode = values[8]
@@ -40,7 +40,8 @@ with open("province_deta.txt", "w", encoding="utf-8") as output_file:
             #orgtype = values[12]
 
             # สร้างสตริงผลลัพธ์ตามที่ต้องการ
-            output = f"{pcode} {pname} {type_soilder}\n"
+            #output = f"{pcode} {pname} {type_soilder}\n"
+            output = f"{pcode} {pname}\n"
 
             # เขียนข้อมูลลงไฟล์ _deta.txt
             output_file.write(output)

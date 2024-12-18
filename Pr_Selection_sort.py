@@ -1,4 +1,3 @@
-
 """
 Created on Thu Dec 12 13:15:17 2024
 
@@ -11,7 +10,7 @@ start_time = time.time()
 
 with open("Sorting-Algorithm/province_deta.txt", "r", encoding="utf-8") as file:
     lines = file.readlines() # อ่านไฟล์ทีละบรรทัดแล้วเก็บในลิสต์
-    
+
 def SelectionSort(a_list):
     n = len(a_list)
 
